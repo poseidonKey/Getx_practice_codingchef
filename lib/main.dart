@@ -12,16 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+          primarySwatch: Colors.blue,
           scrollbarTheme: ScrollbarThemeData(
-              isAlwaysShown: true,
+              thumbVisibility: MaterialStateProperty.all(true),
               thickness: MaterialStateProperty.all(10),
               thumbColor: MaterialStateProperty.all(Colors.red[100]),
               radius: const Radius.circular(10),
-              minThumbLength: 50)
-      ),
+              minThumbLength: 50)),
       home: ShoppingPage(),
     );
   }
 }
-
